@@ -5,6 +5,7 @@ FetchContent_Declare(openmesh
   GIT_TAG         OpenMesh-9.0
 )
 set(BUILD_APPS OFF CACHE BOOL "" FORCE)
+set(OPENMESH_DOCS OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(${PROJECT_NAME})
 message(STATUS "[${PROJECT_NAME}] Down at ${openmesh_SOURCE_DIR}")
 

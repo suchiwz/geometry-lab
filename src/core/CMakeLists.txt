@@ -1,5 +1,5 @@
 project(core)
-set(INC_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
+set(INC_PATH "${CMAKE_CURRENT_SOURCE_DIR}/..")
 file(GLOB source
   "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/*.hpp"
