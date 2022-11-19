@@ -4,5 +4,5 @@ file(GLOB source
 )
 add_executable(${PROJECT_NAME} ${source})
 target_link_libraries(${PROJECT_NAME}
-  geometry-lab::core geometry-lab::render
+  geometry-lab::core geometry-lab::render filedialog
 )
