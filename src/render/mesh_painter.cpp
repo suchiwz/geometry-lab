@@ -88,8 +88,8 @@ void MeshPainter::LoadElementBuffer() {
   glBindVertexArray(0);
 }
 MeshPainter::~MeshPainter() {
-  glDeleteBuffers(1, &vao_);
-  glDeleteBuffers(1, &vbo_);
   glDeleteBuffers(1, &ebo_);
+  glDeleteBuffers(1, &vbo_);
+  glDeleteVertexArrays(1, &vao_);
 }
 }  // namespace geometry_lab
