@@ -3,6 +3,7 @@ message(STATUS "[${PROJECT_NAME}] Fetching...")
 FetchContent_Declare(${PROJECT_NAME}
   GIT_REPOSITORY  https://github.com/ocornut/imgui.git
   GIT_TAG         v1.88
+  GIT_PROGRESS    TRUE
 )
 FetchContent_MakeAvailable(${PROJECT_NAME})
 file(GLOB source

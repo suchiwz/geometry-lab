@@ -3,6 +3,7 @@ message(STATUS "[${PROJECT_NAME}] Fetching...")
 FetchContent_Declare(${PROJECT_NAME}
   GIT_REPOSITORY  https://gitlab.com/libeigen/eigen.git
   GIT_TAG         3.4.0
+  GIT_PROGRESS    TRUE
 )
 set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
 set(EIGEN_BUILD_DOC OFF CACHE BOOL "" FORCE)

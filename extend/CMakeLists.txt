@@ -1,4 +1,6 @@
 include(FetchContent)
+set(FETCHCONTENT_QUIET FALSE)
+
 add_subdirectory(openmesh)
 add_subdirectory(eigen)
 add_subdirectory(glad)

@@ -3,6 +3,7 @@ message(STATUS "[${PROJECT_NAME}] Fetching...")
 FetchContent_Declare(${PROJECT_NAME}
   GIT_REPOSITORY  https://github.com/suchiwz/glad.git
   GIT_TAG main
+  GIT_PROGRESS    TRUE
 )
 FetchContent_MakeAvailable(${PROJECT_NAME})
 file(GLOB source

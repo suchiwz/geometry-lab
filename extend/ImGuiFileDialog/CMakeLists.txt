@@ -4,6 +4,7 @@ message(STATUS "[${PROJECT_NAME}] Fetching...")
 FetchContent_Declare(${PROJECT_NAME}
     GIT_REPOSITORY  https://github.com/aiekick/ImGuiFileDialog.git
     GIT_TAG         v0.6.4
+    GIT_PROGRESS    TRUE
 )
 FetchContent_MakeAvailable(${PROJECT_NAME})
 configure_file(
